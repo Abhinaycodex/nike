@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100%;
+    width: 100vw;
+    background-image: url(image/bubble-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: rgb(black, rgb(57, 187, 57), rgb(69, 69, 179));
+
+}
+
+
+section nav .logo{
+
+    font-size: 35px;
+    color: violet;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+section nav .logo span{
+
+    color: #994f93;
+    text-decoration: underline;
+
+}
+
+section nav ul {
+        list-style: none;
+}
+
+section nav ul li{
+
+    display: inline-block;
+    margin: 5px 25px;
+}
+
+section nav  ul li a{
+
+    color: black;
+    transition:  0.2s;
+    text-decoration:  none;
+
+}
+
+
+section nav  ul li a:hover{
+
+    color: #2d9fd0;
+}
+
+section nav .icon i{
+
+    cursor: pointer;
+    margin: 0 4px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav .icon i:hover{
+    color: #994f93;
+}
+
+section .main .maincontent{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .maincontent .maintext h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family: pyxidium quick ;
+    background-color: linear-gradient(to right, #c72092 ,#6c14d0, #c72092);
+    background-clip: text ;
+    -webkit-background-clip: text ;
+    color: transparent  ; 
+    position: relative;
+    top: 45px; 
+    left: 10%;
+}
+
+
+section .main .maincontent .maintext h1 span{
+
+    font-size: 70px;
+    line-height: 70px;
+    font-family:'Gill Sans', sans-serif ;
+    background : linear-gradient(to right #c72092 #6c14d0);
+    color: crimson;
+    position: relative;
+    top: 45px; 
+    left: 5%;
+}
+
+section .main .maincontent .maintext p{
+
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top : 85px;
+    left: 50%;
+}
+
+section .main .maincontent .main_image img{
+    width: 650px;
+    height: auto;
+    position: relative;
+    left: 20px;
+    top :75px;  
+
+}
+
+section .main .social_icon {
+    position: absolute;
+    top:5%;
+    left: 100%;
+    transform: translate(-50%, 50%);
+    font-size: 20px;
+}
+
+section .main .social_icon i{
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: #c72092;
+    
+}
+
+section .main .button { 
+    position: absolute; 
+    left: 10%;
+    border-radius: 30px;
+    padding :  60px;
+    background: linear-gradient(to right,  rgb(141, 44, 120), rgb(194, 125, 186));
+    border: 10px;
+    border-color: salmon;
+
+}
+
+section .main .button a{
+    padding: 10%;
+    color: white;
+    text-decoration: none;
+
+}
+
+section .main .button i{
+    color: white;
+    margin-left: 5%;
+    transition: 0.3s;
+}
+
+section .main .button:hover i{
+    transform: translateX();
+}
+
+.product{
+    width: 100%;
+    height: 140vh;
+    padding: 25% 0 ;
+
+}
+
+.products h1{
+    margin: 35px 40px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background: linear-gradient(to right , #2d9fd0 ,#c72092 );
+    background-clip: text;
+    color: red;
+    /* color: transparent; */
+}
+

@@ -8,8 +8,15 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
+
 }
 
+body{
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
 section{
     height: 100%;
     width: 100vw;
@@ -105,7 +112,8 @@ section .main .maincontent .maintext h1{
     color: transparent  ; 
     position: relative;
     top: 45px; 
-    left: 10%;
+    left: 5%;
+    color: black;
 }
 
 
@@ -128,15 +136,15 @@ section .main .maincontent .maintext p{
     line-height: 21px;
     position: relative;
     top : 85px;
-    left: 50%;
+    left: 5%;
 }
 
 section .main .maincontent .main_image img{
-    width: 650px;
+    width: 550px;
     height: auto;
     position: relative;
-    left: 20px;
-    top :75px;  
+    left: 5px;
+    top :60px;  
 
 }
 
@@ -161,25 +169,32 @@ section .main .social_icon i:hover{
 
 section .main .button { 
     position: absolute; 
-    left: 10%;
-    border-radius: 30px;
-    padding :  60px;
+    left: 5%;
+    border-radius: 50px;
+    padding :  10px 30px;
     background: linear-gradient(to right,  rgb(141, 44, 120), rgb(194, 125, 186));
     border: 10px;
     border-color: salmon;
+    display: flex;
+    align-items: center;
+    
+    
 
 }
 
 section .main .button a{
-    padding: 10%;
+
+    /* padding: 10%; */
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 
 }
 
 section .main .button i{
+    
     color: white;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     transition: 0.3s;
 }
 
@@ -187,23 +202,141 @@ section .main .button:hover i{
     transform: translateX();
 }
 
-.product{
+.products{
     width: 100%;
-    height: 140vh;
-    padding: 25% 0 ;
+    /* height: 140vh; */
+    padding: 25px ;
 
 }
 
 .products h1{
     margin: 35px 40px;
-    font-size: 80px;
+    font-size: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     background: linear-gradient(to right , #2d9fd0 ,#c72092 );
     background-clip: text;
     color: red;
     /* color: transparent; */
 }
 
+.products .box{
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px 0;
+
+}
+
+.products .box .card .image img{
+    width: 300px; 
+    padding: 20px;  
+}
+
+.product .box .card .image img:hover{
+    zoom: 5px;
+    cursor: pointer;
+}
+
+
+.products  .small_card i{
+    height: 45px;
+    width: 45px;    
+    cursor: pointer;
+    margin: 0 4px;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+.products .small_card i:hover{
+    color: rgb(128, 38, 5);
+    transition: 0.3s;
+
+}
+.products .box .card .product_stars i{
+    cursor: pointer;
+    margin: 0 4px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.products .box .product_text .product_stars i:hover{
+    color: gold;
+    transition: 0.2s;
+}
+
+.products .box .card{
+        width: 390px;
+        height: 550px;
+        box-shadow: 0 0 8px purple;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px 20px;
+        background: rgb(224, 211, 211);
+}
+
+.products .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translatex(-20px); 
+    transition: 0.2s;
+}
+
+.products .box .card .buttonwrapper{
+    margin-top: 20px;
+}
+
+.products .box .card:hover{ 
+    transform: translatex();
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.products .box .card .product_text{
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .box .card .product_text h2{
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+.products .box .card .product_text p{
+    color: gray;
+    line-height: 20px;
+    margin: 6px 0;
+}
+
+.products .product_text .btn{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    border-radius: 30px;
+    background-color: rgb(81, 169, 81);
+    position: relative;
+    top: 10px;
+    margin-top: 20px;
+}
+
+footer p{
+    position: relative;
+    border: 4px solid;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

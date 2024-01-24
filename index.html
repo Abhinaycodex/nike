@@ -310,10 +310,57 @@
 
         </div>
     </div>
+
+    <!-- about -->
+
+    <div class="About" id="About">
+
+        <h1>
+            THIS IS ABOUT SECTION
+        </h1>
+        <div class="aboutmain">
+            <div class="aboutimage">
+                <div class="small_image">
+                    <img src="image/product1" alt="p1" onclick="functio(this)" >
+                    <img src="image/product2" alt="p2" onclick="functio(this)">
+                    <img src="image/product1" alt="p1" onclick="functio(this)">
+                    <img src="image/product2" alt="p2" onclick="functio(this)" >
+                
+                </div>
+                <div class="image_container">
+                    <img src="image/nike-shoes-removebg-preview.png" id="image_box">
+                </div>
+            </div>
+
+            <div class="about_text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sed modi non fugiat, dolore animi rem blanditiis porro minima provident sapiente iste aliquid error. Recusandae veniam, numquam quaerat blanditiis nesciunt asperiores eveniet ad, ex accusamus sunt necessitatibus laudantium quod possimus iste temporibus officiis eos, eum illum dolorum dolores. Non, consequatur!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="about_btn">
+
+            <a href="#"> Shop Now </a>
+
+        </div>
+        
+
+        <script>
+            function functio(small){
+                var full =document.getElementById("imagebox")
+                full.src = small.src
+            }
+        </script>
+
+    </div>
+
+
     
-        <footer>
-            <p >&copy; 2024 NIKE brand by ABHINAY &nbsp;&ndash;&nbsp; All Rights Reserved</p>
-        </footer>
+    <footer>
+        <p >&copy; 2024 NIKE brand by ABHINAY &nbsp;&ndash;&nbsp; All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>

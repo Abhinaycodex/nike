@@ -330,6 +330,105 @@ section .main .button:hover i{
     margin-top: 20px;
 }
 
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+
+.aboutmain{
+
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+
+.About h1{
+    font-size: 60px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(55, 163, 203, 0.893);
+}
+
+.aboutimage .small_image img{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    height: 100px;
+    margin: 5%;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0,0,6px;
+    transition: 0.3s;
+
+}
+
+.aboutmain .aboutimage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutmain .aboutimage .image_container img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 10px;
+    /* top: 10px; */
+    border: 3px solid purple;
+}
+
+.about_text {
+    padding: 40px;
+       
+}
+
+.about_text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px;
+    text-align: justify ;
+    width: 600px;
+    border: 2px solid palevioletred;
+    border-radius: 20px;
+       
+}
+
+.About .about_btn{
+    color: black;
+    position: relative;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .about_btn a{
+    color: black;
+    position: relative;
+    top: 4px; 
+    left: 50%;
+    border: 2px solid pink;
+    box-shadow: 0  0 8px;
+    left: 5%; 
+    padding :  10px 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 footer p{
     position: relative;
     border: 4px solid;
